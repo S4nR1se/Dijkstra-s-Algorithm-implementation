@@ -237,8 +237,6 @@ public class Kim : CharacterController
 
         _path = Pathfinding(myCurrentTile, endTile);
 
-        _path = Pathfinding(myCurrentTile, endTile);
-
         if (_path == null)
         {
             _path = new List<Grid.Tile>();
