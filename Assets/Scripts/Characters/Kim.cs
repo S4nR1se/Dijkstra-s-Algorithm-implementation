@@ -287,9 +287,7 @@ public class Kim : CharacterController
                 if (IsTileDangerous(neighbor)) continue;
                 if (neighbor == _startTile) continue;
 
-                float altDistance = distances[current] + Vector3.Distance(
-                    Grid.Instance.WorldPos(current),
-                    Grid.Instance.WorldPos(neighbor));
+                float altDistance = distances[current] + Vector3.Distance(Grid.Instance.WorldPos(current), Grid.Instance.WorldPos(neighbor));
 
                 if (altDistance < distances[neighbor])
                 {
